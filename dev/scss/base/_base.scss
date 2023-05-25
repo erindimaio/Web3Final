@@ -2,4 +2,34 @@
     Base
 ============= */
 
+img{
+    max-width: 10%
+}
 
+ul {
+    list-style: none;
+    padding: 0px;
+    margin: 0px;
+}
+
+
+article{
+    display: flex;
+    flex-direction: column;
+
+    @include lg{
+         flex-direction: row;
+    }
+   
+}
+
+
+
+@mixin site-padding(){
+    padding: 40px 20px;
+
+    @include lg{
+        padding: 150px 200px;
+
+    }
+}

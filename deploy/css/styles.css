@@ -1,11 +1,6 @@
 /* =============
     Mixins
 ============= */
-/* ---------------- Font Sizing ---------------- */
-html {
-  font-size: 100%;
-}
-
 /* ---------------- Media Queries ---------------- */
 /* =============
     Variables
@@ -13,6 +8,12 @@ html {
 :root {
   --black: #000000;
   --white: #ffffff;
+  --teal: #4691A3;
+  --buttonteal: #59B5CB;
+  --green: #7C9491;
+  --lightblue: #A4B7BC;
+  --grayblue: #5D6C78;
+  --tan: #D7D3C3;
 }
 
 /*! normalize.css v8.0.1 | MIT License | github.com/necolas/normalize.css */
@@ -327,9 +328,54 @@ template {
 /* =============
     Base
 ============= */
+img {
+  max-width: 10%;
+}
+
+ul {
+  list-style: none;
+  padding: 0px;
+  margin: 0px;
+}
+
+article {
+  display: flex;
+  flex-direction: column;
+}
+@media (min-width: 1024px) {
+  article {
+    flex-direction: row;
+  }
+}
+
 /* =============
     Typography
 ============= */
+h1 {
+  font-family: Montserrat;
+  font-weight: Bold;
+  font-size: 30pt;
+  --teal: #4691A3;
+}
+
+h2 {
+  font-family: Montserrat;
+  font-weight: Bold;
+  font-size: 20pt;
+}
+
+h4 {
+  font-family: Jost;
+  font-weight: Medium;
+  font-size: 10pt;
+}
+
+p {
+  font-family: Jost;
+  font-weight: Regular;
+  font-size: 15pt;
+}
+
 /* =============
     Buttons
 ============= */

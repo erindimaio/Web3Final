@@ -1,0 +1,27 @@
+#hero{
+  
+    display: grid;
+    justify-content: center;
+
+    div.centered{
+        text-align: center;
+    }
+
+    div.hero{
+        width: 100%;
+    }
+
+    div.lefttext{
+       
+        text-align: left;
+        position: absolute;
+        
+    }
+
+    img{
+        width: 100%;
+    }
+}
+
+
+

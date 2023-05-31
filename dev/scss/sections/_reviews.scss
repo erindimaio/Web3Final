@@ -1,0 +1,19 @@
+#reviews{
+   
+
+
+    img{
+        width: 100%;
+    }
+}
+
+div.comments{
+    background-color: $lightblue;
+    display: flex;
+    margin: 10px;
+}
+
+#buttons{
+    align-items: right;
+    justify-content: right;
+}

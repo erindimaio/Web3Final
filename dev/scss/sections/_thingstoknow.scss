@@ -1,0 +1,29 @@
+#part1{
+    background-color: $lightblue;
+    display: flex;
+    margin: 10px;
+
+
+
+    }
+   
+
+  
+
+#part2{
+    background-color: $lightblue;
+    display: flex;
+    margin: 10px;
+    flex-direction: row-reverse;
+
+    
+}
+    
+   
+.manimg{
+flex: 50%; 
+}
+
+.thingssection{
+    flex: 50%;
+}

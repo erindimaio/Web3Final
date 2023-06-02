@@ -322,6 +322,10 @@ template {
 /* =============
     Base
 ============= */
+* {
+  scroll-behavior: smooth;
+}
+
 img {
   max-width: 100%;
 }
@@ -442,7 +446,7 @@ textarea {
     Navigation
 ============= */
 header {
-  background-color: lightblue;
+  background-color: #A4B7BC;
   display: flex;
   align-items: center;
   justify-content: space-between;
@@ -469,6 +473,21 @@ form#searcharea {
 form#searcharea input {
   border-radius: 20px;
 }
+@media only screen and (max-width: 1024px) {
+  form#searcharea {
+    background-color: #4691A3;
+    transition: 0.3s;
+    height: 100vw;
+    width: 80%;
+    position: absolute;
+    top: 0;
+    right: -100%;
+  }
+  form#searcharea.show-menu {
+    right: 0;
+    transition: 0.3s;
+  }
+}
 
 #lowernav ul {
   display: flex;
@@ -491,12 +510,13 @@ form#searcharea input {
 
 #main-menu ul {
   display: flex;
+  justify-content: space-between;
 }
-@media only screen and (max-width: 600px) {
+@media only screen and (max-width: 1024px) {
   #main-menu {
-    background-color: teal;
+    background-color: #4691A3;
     transition: 0.3s;
-    height: 100vw;
+    height: 177vw;
     width: 80%;
     position: absolute;
     top: 0;
@@ -505,6 +525,10 @@ form#searcharea input {
   #main-menu.show-menu {
     right: 0;
     transition: 0.3s;
+  }
+  #main-menu ul {
+    display: grid;
+    padding: 10px;
   }
 }
 @media (min-width: 1024px) {
@@ -606,4 +630,31 @@ div.comments {
 #buttons {
   align-items: right;
   justify-content: right;
+}
+
+#incart {
+  display: flex;
+  justify-content: space-between;
+}
+#incart img {
+  width: 20%;
+}
+
+#airfilter {
+  display: flex;
+  justify-content: space-between;
+}
+#airfilter img {
+  width: 30%;
+}
+
+#warning {
+  display: flex;
+}
+#warning img {
+  width: 2%;
+}
+
+#shipping {
+  display: flex;
 }

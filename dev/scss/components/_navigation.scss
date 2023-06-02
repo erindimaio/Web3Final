@@ -3,7 +3,7 @@
 ============= */
 
 header {
-    background-color: lightblue;
+    background-color: $lightblue;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -14,17 +14,11 @@ header {
         gap: 10px;
         position: relative;
 
-
-
-
-
         div {
             height: 5px;
             width: 30px;
             background-color: black;
         }
-
-
     }
 }
 
@@ -38,15 +32,28 @@ form#searcharea {
     color: white;
     align-items: stretch;
 
-
-
-
-    button {}
-
     input {
         border-radius: 20px;
     }
+
+    @media only screen and (max-width: 1024px) {
+        background-color: $teal;
+        transition: .3s;
+        height: 100vw;
+        width: 80%;
+        position: absolute;
+        top: 0;
+        right: -100%;
+
+        &.show-menu {
+            right: 0;
+            transition: .3s;
+        }
+    }
+
+
 }
+
 
 #lowernav {
     ul {
@@ -75,20 +82,26 @@ form#searcharea {
 #main-menu {
     ul {
         display: flex;
+        justify-content: space-between;
     }
 
-    @media only screen and (max-width: 600px) {
-        background-color: teal;
-        transition:.3s;
-        height: 100vw;
+    @media only screen and (max-width: 1024px) {
+        background-color: $teal;
+        transition: .3s;
+        height: 177vw;
         width: 80%;
         position: absolute;
         top: 0;
         right: -100%;
 
-        &.show-menu{
-            right:0;
-            transition:.3s;
+        &.show-menu {
+            right: 0;
+            transition: .3s;
+        }
+
+        ul {
+            display: grid;
+            padding: 10px;
         }
     }
 
@@ -96,6 +109,7 @@ form#searcharea {
 
     @include lg {
         display: inline;
+
 
     }
 }

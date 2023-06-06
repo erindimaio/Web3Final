@@ -424,6 +424,16 @@ a {
 /* =============
     Buttons
 ============= */
+.btn {
+  background-color: #59B5CB;
+  color: white;
+  padding: 10px 10px;
+  display: inline;
+}
+.btn.border {
+  background-color: none;
+}
+
 /* =============
     Forms
 ============= */
@@ -451,11 +461,38 @@ header {
   align-items: center;
   justify-content: space-between;
 }
+header #cart {
+  display: flex;
+  margin: 10px;
+}
+header #cart img {
+  padding: 10px;
+}
 header #burger-btn {
   display: flex;
   flex-direction: column;
   gap: 10px;
   position: relative;
+}
+header #burger-btn.open div {
+  transition: 0.3s;
+  background-color: white;
+}
+header #burger-btn.open div:first-child {
+  transform: rotate(45deg);
+  transform-origin: bottom left;
+  position: relative;
+  top: 3px;
+  margin-right: 7px;
+}
+header #burger-btn.open div:nth-child(2) {
+  opacity: 0;
+}
+header #burger-btn.open div:last-child {
+  transform-origin: top left;
+  transform: rotate(-45deg);
+  position: relative;
+  top: -3px;
 }
 header #burger-btn div {
   height: 5px;
@@ -464,14 +501,13 @@ header #burger-btn div {
 }
 
 form#searcharea {
-  background-color: white;
   display: flex;
   width: 100%;
   color: white;
   align-items: stretch;
 }
 form#searcharea input {
-  border-radius: 20px;
+  border-radius: 10px;
 }
 @media only screen and (max-width: 1024px) {
   form#searcharea {
@@ -516,18 +552,21 @@ form#searcharea input {
   #main-menu {
     background-color: #4691A3;
     transition: 0.3s;
-    height: 177vw;
+    height: 100vh;
     width: 80%;
     position: absolute;
     top: 0;
     right: -100%;
+    z-index: 2;
   }
   #main-menu.show-menu {
     right: 0;
     transition: 0.3s;
   }
   #main-menu ul {
-    display: grid;
+    display: flex;
+    flex-direction: column;
+    gap: 10px;
     padding: 10px;
   }
 }
@@ -550,29 +589,34 @@ form#searcharea input {
 #hero div.centered {
   text-align: center;
 }
-#hero div.hero {
+#hero #heroimg {
   width: 100%;
+  position: relative;
+  z-index: 0;
 }
 #hero div.lefttext {
   text-align: left;
   position: absolute;
+  top: 0;
 }
 #hero img {
   width: 100%;
 }
 
-#product #buttons {
+#product .purchasing {
   display: flex;
-  align-items: center;
   justify-content: center;
 }
-#product div.title {
+
+div.title {
   text-align: center;
 }
-#product .productimg img {
+
+.productimg img {
   width: 100%;
 }
-#product .bottomtext {
+
+.bottomtext {
   text-align: center;
 }
 
@@ -632,6 +676,22 @@ div.comments {
   justify-content: right;
 }
 
+#people {
+  display: flex;
+}
+
+#options {
+  display: flex;
+  margin: 10px;
+  text-align: center;
+}
+#options img {
+  width: 60%;
+}
+#options div {
+  flex: 1;
+}
+
 #incart {
   display: flex;
   justify-content: space-between;
@@ -655,6 +715,10 @@ div.comments {
   width: 2%;
 }
 
-#shipping {
-  display: flex;
+#shipping div.InfoBox {
+  display: grid;
+}
+
+#check {
+  text-align: center;
 }

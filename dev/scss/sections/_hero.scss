@@ -7,15 +7,17 @@
         text-align: center;
     }
 
-    div.hero{
+    #heroimg{
         width: 100%;
+        position: relative;
+        z-index: 0;
     }
 
     div.lefttext{
        
         text-align: left;
         position: absolute;
-        
+        top: 0;
     }
 
     img{

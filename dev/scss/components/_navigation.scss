@@ -8,11 +8,49 @@ header {
     align-items: center;
     justify-content: space-between;
 
+    #cart {
+        display: flex;
+        margin: 10px;
+     
+
+        img{
+             padding: 10px; 
+        }
+      
+    }
+
     #burger-btn {
         display: flex;
         flex-direction: column;
         gap: 10px;
         position: relative;
+
+        &.open{
+            div{
+              transition:.3s;
+              //// COLORS & STYLES FOR ALL HERE
+              background-color: white;
+              &:first-child{
+                transform: rotate(45deg);
+                transform-origin: bottom left;
+                position: relative;
+                top:3px;
+                margin-right: 7px;
+              }
+              &:nth-child(2){
+                opacity:0;
+              }
+              &:last-child{
+                transform-origin: top left;
+                transform:rotate(-45deg);
+                position: relative;
+                top:-3px;
+
+              }
+            }
+          }
+
+        
 
         div {
             height: 5px;
@@ -25,15 +63,16 @@ header {
 
 
 form#searcharea {
-
-    background-color: white;
     display: flex;
     width: 100%;
     color: white;
     align-items: stretch;
 
+    
+
+
     input {
-        border-radius: 20px;
+        border-radius: 10px;
     }
 
     @media only screen and (max-width: 1024px) {
@@ -44,6 +83,7 @@ form#searcharea {
         position: absolute;
         top: 0;
         right: -100%;
+      
 
         &.show-menu {
             right: 0;
@@ -88,20 +128,29 @@ form#searcharea {
     @media only screen and (max-width: 1024px) {
         background-color: $teal;
         transition: .3s;
-        height: 177vw;
+        height: 100vh;
         width: 80%;
         position: absolute;
         top: 0;
         right: -100%;
+        z-index: 2;
 
         &.show-menu {
             right: 0;
             transition: .3s;
+           
+
+            //code will go here
         }
 
         ul {
-            display: grid;
+            display: flex;
+            flex-direction: column;
+            gap: 10px;
             padding: 10px;
+          
+           
+       
         }
     }
 

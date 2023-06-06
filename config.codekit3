@@ -42,6 +42,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/applepay.png" : {
+      "ft" : 32768,
+      "iS" : 3121,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/applepay.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/basic photoshop 2.png" : {
       "ft" : 32768,
       "iS" : 765179,
@@ -60,6 +73,19 @@
       "iS" : 565,
       "oA" : 0,
       "oAP" : "\/deploy\/img\/cart.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/credit.png" : {
+      "ft" : 32768,
+      "iS" : 1475,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/credit.png",
       "oF" : 0,
       "oIPL" : 0,
       "opt" : 0,
@@ -250,6 +276,19 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/paypal.png" : {
+      "ft" : 32768,
+      "iS" : 4707,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/paypal.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/profile.png" : {
       "ft" : 32768,
       "iS" : 673,
@@ -415,14 +454,6 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/ThankYou\/check.html",
-      "oF" : 0
-    },
-    "\/dev\/content\/ThankYou\/orderlist.kit" : {
-      "cB" : 0,
-      "ft" : 2048,
-      "hM" : 0,
-      "oA" : 1,
-      "oAP" : "\/dev\/content\/ThankYou\/orderlist.html",
       "oF" : 0
     },
     "\/dev\/global\/footer.kit" : {
@@ -681,6 +712,36 @@
       "ma" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/scss\/sections\/_hero.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_maylike.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_maylike.css",
+      "oF" : 0,
+      "oS" : 0,
+      "pg" : 0,
+      "sct" : 0
+    },
+    "\/dev\/scss\/sections\/_orderlist.scss" : {
+      "aP" : 0,
+      "bl" : 0,
+      "co" : 0,
+      "dP" : 10,
+      "ec" : 1,
+      "ft" : 4,
+      "ma" : 0,
+      "oA" : 1,
+      "oAP" : "\/dev\/scss\/sections\/_orderlist.css",
       "oF" : 0,
       "oS" : 0,
       "pg" : 0,

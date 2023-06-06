@@ -3,5 +3,21 @@
 ============= */
 
 
+ .buttons {
+    
+  
+    }
+
+.btn {
+    background-color: $buttonteal; 
+    color: white;
+   padding: 10px 10px;
+  display: inline;
+
+  &.border{
+    background-color: none;
+  }
+}
 
 
+ 

@@ -146,6 +146,16 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/facebook.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/facebook.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/flask-engraving-.jpg" : {
       "ft" : 16384,
       "iS" : 60635,
@@ -224,6 +234,16 @@
       "q" : 100,
       "rq" : 75
     },
+    "\/deploy\/img\/insta.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/insta.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/laptop-engraving-.jpg" : {
       "ft" : 16384,
       "iS" : 1726806,
@@ -289,6 +309,19 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/Profile copy.png" : {
+      "ft" : 32768,
+      "iS" : 3454,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/Profile copy.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
     "\/deploy\/img\/profile.png" : {
       "ft" : 32768,
       "iS" : 673,
@@ -315,6 +348,29 @@
       "q" : 90,
       "rq" : 75
     },
+    "\/deploy\/img\/stars.png" : {
+      "ft" : 32768,
+      "iS" : 1837,
+      "oA" : 0,
+      "oAP" : "\/deploy\/img\/stars.png",
+      "oF" : 0,
+      "oIPL" : 0,
+      "opt" : 0,
+      "oT" : 1,
+      "ou" : "lpckwebp-none",
+      "q" : 90,
+      "rq" : 75
+    },
+    "\/deploy\/img\/twitter.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/twitter.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
+    },
     "\/deploy\/img\/warning.png" : {
       "ft" : 32768,
       "iS" : 343,
@@ -340,6 +396,16 @@
       "ou" : "lpckwebp-none",
       "q" : 100,
       "rq" : 75
+    },
+    "\/deploy\/img\/youtube.svg" : {
+      "ft" : 2097152,
+      "miP" : 0,
+      "oA" : 2,
+      "oAP" : "\/deploy\/img\/youtube.svg",
+      "oF" : 0,
+      "opt" : 0,
+      "plM" : 52780316221407,
+      "prP" : 0
     },
     "\/deploy\/index.html" : {
       "cB" : 0,
@@ -422,7 +488,7 @@
       "hM" : 0,
       "oA" : 1,
       "oAP" : "\/dev\/content\/Product\/hero.html",
-      "oF" : 0
+      "oF" : 1
     },
     "\/dev\/content\/Product\/product.kit" : {
       "cB" : 0,

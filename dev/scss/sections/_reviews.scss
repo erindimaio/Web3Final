@@ -1,19 +1,43 @@
 #reviews{
    
 
+}
 
-    img{
-        width: 100%;
+.card-container {
+    align-items: start;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 56px;
+    grid-template-columns: 1fr;
+    justify-content: center;
+
+   
+
+    @include lg{ 
+        align-items: start;
+        display: grid;
+        justify-content: space-between;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
     }
 }
 
 
-div.comments{
-    background-color: $lightblue;
-    display: flex;
-    margin: 10px;
+div.card {
+	background-color: $green;
+    border-radius: 15px;
+	text-align: center;
     
+
+
+    img{
+        width: 35%;
+    }
+  
+
 }
+
 
 #buttons{
     align-items: right;
@@ -24,3 +48,4 @@ div.comments{
 #people {
     display: flex;
 }
+

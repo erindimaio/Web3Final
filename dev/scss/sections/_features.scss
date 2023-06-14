@@ -1,12 +1,37 @@
+.card-container1 {
+	align-items: start;
+	display: grid;
+    justify-content: space-between;
+	grid-gap: 16px;
+	grid-template-columns: 1fr ;
+	justify-content: center;
+    
+    input {
+        border-radius: 10px;
+    }
+  
+    @include lg{ 
+        align-items: start;
+        display: grid;
+        justify-content: space-between;
+        grid-gap: 16px;
+        grid-template-columns: 1fr 1fr 1fr;
+        justify-content: center;
+    }
+    }
 
-#features {
-    background-color:$green;
-    display: flex;
-    margin: 10px;
-    text-align: center;
+
+  
+    div.card1 {
+        background-color: $green;
+        border-radius: 15px;
+        text-align: center;
+    
+    }
 
     img{
         width: 100%;
+
     }
     
     div{
@@ -14,5 +39,5 @@
       
     }
 
-    
-}
+  
+

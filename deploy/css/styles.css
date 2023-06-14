@@ -424,6 +424,29 @@ a {
 /* =============
     Buttons
 ============= */
+.button {
+  padding: 10px 10px;
+  display: inline;
+}
+
+.addbtn {
+  background-color: #59B5CB;
+  color: white;
+  justify-content: center;
+  text-align: center;
+  display: inline-block;
+  height: 50px;
+  width: 50px;
+  cursor: pointer;
+}
+.addbtn.border {
+  background-color: none;
+}
+
+.addbtn:hover {
+  background-color: #A4B7BC;
+}
+
 .btn {
   background-color: #59B5CB;
   color: white;
@@ -432,6 +455,25 @@ a {
 }
 .btn.border {
   background-color: none;
+}
+
+.btn:hover {
+  background-color: #A4B7BC;
+}
+
+.buybtn {
+  background-color: #59B5CB;
+  color: white;
+  padding: 10px 10px;
+  display: inline;
+  border-radius: 80px;
+}
+.buybtn.border {
+  background-color: none;
+}
+
+.btn:hover {
+  background-color: #A4B7BC;
 }
 
 /* =============
@@ -474,6 +516,11 @@ header #burger-btn {
   gap: 10px;
   position: relative;
 }
+header #burger-btn div {
+  height: 5px;
+  width: 30px;
+  background-color: black;
+}
 header #burger-btn.open div {
   transition: 0.3s;
   background-color: white;
@@ -493,11 +540,6 @@ header #burger-btn.open div:last-child {
   transform: rotate(-45deg);
   position: relative;
   top: -3px;
-}
-header #burger-btn div {
-  height: 5px;
-  width: 30px;
-  background-color: black;
 }
 
 form#searcharea {
@@ -582,6 +624,11 @@ form#searcharea input {
 /* =============
     Footer
 ============= */
+#footerinfo {
+  background-color: #5D6C78;
+  display: flex;
+}
+
 #hero {
   display: grid;
   justify-content: center;
@@ -606,30 +653,61 @@ form#searcharea input {
 #product .purchasing {
   display: flex;
   justify-content: center;
+  gap: 40px;
 }
 
 div.title {
   text-align: center;
 }
 
+.productimg {
+  display: grid;
+  justify-content: center;
+  text-align: center;
+}
 .productimg img {
-  width: 100%;
+  width: 50%;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .bottomtext {
   text-align: center;
 }
 
-#features {
+.card-container1 {
+  align-items: start;
+  display: grid;
+  justify-content: space-between;
+  grid-gap: 16px;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+.card-container1 input {
+  border-radius: 10px;
+}
+@media (min-width: 1024px) {
+  .card-container1 {
+    align-items: start;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
+}
+
+div.card1 {
   background-color: #7C9491;
-  display: flex;
-  margin: 10px;
+  border-radius: 15px;
   text-align: center;
 }
-#features img {
+
+img {
   width: 100%;
 }
-#features div {
+
+div {
   flex: 1;
 }
 
@@ -655,20 +733,38 @@ div.title {
 }
 
 #photos {
+  display: grid;
+  grid-template-columns: 1fr 1fr 1fr;
   line-height: 0;
-  column-count: 5;
-  column-count: 5;
   column-gap: 0px;
 }
 
-#reviews img {
-  width: 100%;
+.card-container {
+  align-items: start;
+  display: grid;
+  justify-content: space-between;
+  grid-gap: 56px;
+  grid-template-columns: 1fr;
+  justify-content: center;
+}
+@media (min-width: 1024px) {
+  .card-container {
+    align-items: start;
+    display: grid;
+    justify-content: space-between;
+    grid-gap: 16px;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-content: center;
+  }
 }
 
-div.comments {
-  background-color: #A4B7BC;
-  display: flex;
-  margin: 10px;
+div.card {
+  background-color: #7C9491;
+  border-radius: 15px;
+  text-align: center;
+}
+div.card img {
+  width: 35%;
 }
 
 #buttons {
@@ -717,8 +813,21 @@ div.comments {
 
 #shipping div.InfoBox {
   display: grid;
+  row-gap: 20px;
+  margin-right: 50%;
+}
+#shipping div.methods img {
+  width: 50%;
 }
 
 #check {
+  text-align: center;
+  padding-bottom: 50px;
+}
+#check img {
+  width: 10%;
+}
+
+#track {
   text-align: center;
 }

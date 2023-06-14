@@ -25,7 +25,16 @@ header {
         gap: 10px;
         position: relative;
 
-        &.open{
+        
+
+        div {
+            height: 5px;
+            width: 30px;
+            background-color: black;
+        }
+    }
+
+    #burger-btn.open{
             div{
               transition:.3s;
               //// COLORS & STYLES FOR ALL HERE
@@ -49,15 +58,7 @@ header {
               }
             }
           }
-
-        
-
-        div {
-            height: 5px;
-            width: 30px;
-            background-color: black;
-        }
-    }
+          
 }
 
 

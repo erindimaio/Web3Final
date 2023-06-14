@@ -3,21 +3,65 @@
 ============= */
 
 
- .buttons {
-    
+.button {
+
+    padding: 10px 10px;
+    display: inline;
+
   
-    }
+    
+}
 
-.btn {
-    background-color: $buttonteal; 
+.addbtn {
+    background-color: $buttonteal;
     color: white;
-   padding: 10px 10px;
-  display: inline;
+    justify-content: center;
+    text-align: center;
+    display: inline-block;
+    height: 50px;
+    width: 50px;
+    cursor: pointer;
 
-  &.border{
-    background-color: none;
-  }
+
+    &.border {
+        background-color: none;
+    }
+}
+.addbtn:hover {
+    background-color: $lightblue;    
 }
 
 
- 
+.btn {
+    background-color: $buttonteal;
+    color: white;
+    padding: 10px 10px;
+    display: inline;
+
+    &.border {
+        background-color: none;
+    }
+}
+
+.btn:hover {
+    background-color: $lightblue;    
+}
+
+.buybtn {
+    background-color: $buttonteal;
+    color: white;
+    padding: 10px 10px;
+    display: inline;
+    border-radius: 80px;
+
+
+    &.border {
+        background-color: none;
+    }
+      
+
+}
+
+.btn:hover {
+    background-color: $lightblue;    
+}
